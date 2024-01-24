@@ -11,7 +11,9 @@ setInterval(async () => {
     price = await getPrice('https://www.ozon.ru/product/nastolnaya-igra-crowd-games-zelenyy-dom-1331099308/?_fr=1705661538&sh=0C6aK55eEw') as string
   } catch (e) {
     lastPrice = price
-    sendMessage('Ошибка получения цены. https://ozon.ru/t/7Gj8VBV')
+    if (lastPrice !== price) {
+      sendMessage('Ошибка получения цены. https://ozon.ru/t/7Gj8VBV')
+    }
   }
   if (price) {
     if (lastPrice === '') {
