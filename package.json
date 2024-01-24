@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "puppeteer": "^21.7.0",
+    "telegraf": "^4.15.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "dev": "nodemon index.ts"
+  }
+}
