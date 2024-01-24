@@ -1,7 +1,6 @@
 import { getPrice } from './src/pptr'
 import { startBot, sendMessage } from './src/telegram'
 
-
 startBot()
 
 let lastPrice = ''

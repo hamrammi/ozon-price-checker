@@ -1,8 +1,7 @@
 import { Telegraf } from 'telegraf'
-import { message } from 'telegraf/filters'
+import { config } from 'dotenv'; config()
 
-const BOT_TOKEN = '6900394394:AAGYXgSotzeI52_hKjTh_XWgbLnT4mcwxSI'
-const bot = new Telegraf(BOT_TOKEN)
+const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN as string)
 const chats: number[] = [73505963]
 
 export function startBot () {
