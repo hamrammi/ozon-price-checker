@@ -17,9 +17,9 @@ setInterval(async () => {
       sendMessage(`Новая цена: ${price}`)
     }
   } catch (e) {
-    if (price !== 'error') {
+    if (lastPrice !== 'error') {
       sendMessage('Ошибка получения цены. https://ozon.ru/t/7Gj8VBV')
-      price = 'error'
+      lastPrice = 'error'
     }
   }
 }, 5 * 60 * 1000)
