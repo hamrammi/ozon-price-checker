@@ -2,7 +2,7 @@ Install
 -------
 `npm i`
 
-Add Telegram bot token
+Create .env file and add Telegram bot token
 ----------------------
 `cp .env.example .env`
 
