@@ -23,6 +23,8 @@ export function startBot () {
 export function sendMessage (message: string) {
   console.log(chats)
   chats.forEach(chat => {
-    bot.telegram.sendMessage(chat, message)
+    bot.telegram.sendMessage(chat, message, {
+      disable_web_page_preview: true
+    })
   })
 }
